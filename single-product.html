@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Single Product</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+
+
+<body>
+
+
+	<header class="header container">
+		<div>
+			<button class="homebtn" onClick="parent.location='index.html'"><i class="fa fa-home"></i>
+		</div>
+
+		<div class="details">
+			<h1 class="title">Classic <span>Vintage</span> Cameras</h1>
+			<h3 class="desc-alt">We offer the best selection in classic vintage cameras </h3>
+		</div>
+
+		<a href="cart.html">
+			<div class="cart">
+				<span id="cart_count"></span>
+				<svg height="512pt" viewBox="0 -31 512.00026 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0" />
+					<path
+						d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0" />
+					<path
+						d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0" />
+				</svg>
+			</div>
+		</a>
+	</header>
+
+	<div class="product-card container">
+		<div class="card">
+			<img id="product_image" src="" alt="Product Image">
+			<div class="product-info">
+				<h1 id="product_title">Canon G III QL17</h1>
+				<p id="product_price" class="price">£150.00</p>
+				<div class="choose-lense">Choose Your Camera Lense</div>
+
+				<select id="product_lenses"></select>
+
+				<h3>Quantity</h3>
+				<input type="number" id="quantity" min="1" value="1">
+
+				<p id="product_desc" class="item-information">Lorem ipsum dolor sit amet consectetur adipisicing
+					elit. Animi blanditiis
+					non
+					facere nihil maiores, rem dicta aperiam accusamus amet saepe. Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Animi blanditiis non facere nihil maiores, rem dicta aperiam accusamus amet saepe
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis non facere nihil maiores,
+					rem
+					dicta aperiam accusamus amet saepe</p>
+
+
+				<!-- TODO: Save item to cart -->
+				<div>
+					<button id="cart_btn">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer container">
+		<h3>Contact Us</h3>
+		<p class="cvc_address">143 Guild Street, 
+			Appartment 42,<br>
+			London,<br>
+			SE20 5TS<br>
+			Tel: 070 8141 9179<br>
+			E-mail: classicvintagecameras@temporary-mail.net
+		</p>
+	</footer>
+
+	<!-- JS goes here -->
+	<script src="js/common.js"></script>
+	<script src="js/single-product.js"></script>
+
+</body>
+
+
+</html>
